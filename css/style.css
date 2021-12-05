@@ -40,9 +40,25 @@ ul {
   list-style: none;
 }
 
+h1 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+.btn {
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
 /* ------- Navbar -------- */
 .nav {
-  background-color: aqua;
+  background-color: white;
   padding: 0.2rem;
   height: 0rem;
   min-height: 12vh;
@@ -76,6 +92,7 @@ ul {
   display: block;
   padding: 1rem 0;
   font-size: 1.6rem;
+  font-weight: 800;
 }
 
 .nav-brand {
@@ -117,6 +134,76 @@ ul {
 
 .nav-social i:hover {
   color: #a1c4cf;
+}
+
+/* Main Section Content */
+/* *********** Site Title ************* */
+.site-title {
+  background: url("../assets/Background-image.png");
+  background-size: cover;
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  /* align-items: center; */
+}
+
+.site-background {
+  padding-top: 15rem;
+}
+
+.site-title h1,
+h2 {
+  margin: 0.3rem;
+}
+
+.site-title .btn {
+  margin: 1.8rem;
+  background: var(--sky);
+}
+
+.site-title .btn:hover {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  font-weight: 800;
+}
+
+/* Carousel Cards */
+.cards__container {
+  margin: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.cards {
+  width: 20rem;
+  height: 30rem;
+  text-align: center;
+  /* box-shadow: 1px 4px 4px 12px rgba(0, 0, 0, 0.1); */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.cards img {
+  padding-top: 5px;
+  width: 100%;
+  object-fit: cover;
+  height: 14rem;
+}
+
+.cards h2 {
+  font-size: 1.6rem;
+  padding: 1rem 0.5rem;
+}
+
+.cards .btn {
+  margin-top: 2rem;
+  /* padding-top: 1rem; */
+  background: var(--sky);
 }
 
 /* ----------------- Media Queries --------------- */
