@@ -6,17 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/78f298dc90.js" crossorigin="anonymous"></script>
+
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
-    <title>Blog</title>
+    <title>Blog Place</title>
 </head>
 
 <body>
-    <h1>Blog Site Web</h1>
-
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="#" class="text-gray">Blooger</a>
+            </div>
+            <div class="toggle-collapse" onclick=toggleBar()>
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div id="toggle">
+                <ul class="nav-items">
+                    <li class="nav-link"><a href="#">Home</a></li>
+                    <li class="nav-link"><a href="#">Category</a></li>
+                    <li class="nav-link"><a href="#">About</a></li>
+                    <li class="nav-link"><a href="#">Pages</a></li>
+                    <li class="nav-link"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-social text-gray">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </nav>
 
     <!-- Js -->
     <script src="./JS/main.js"></script>
+
 </body>
 
 </html>

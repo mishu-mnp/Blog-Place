@@ -1,5 +1,136 @@
-* {
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Baloo+Bhaina+2&family=Poppins:wght@400;500;600&display=swap");
+
+html,
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: var(--baloo);
 }
+
+:root {
+  /* text colors */
+  --text-gray: #3f4954;
+  --text-light: #686666da;
+  --bg-color: #0f0f0f;
+  --midnight: #104f55;
+
+  /* gradient colors */
+  --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+  /* font family */
+  --baloo: "Baloo Bhai 2", cursive;
+}
+
+/* ------- Global Classes */
+a {
+  text-decoration: none;
+  color: var(--text-gray);
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ------- Navbar -------- */
+.nav {
+  background-color: aqua;
+  padding: 0.2rem;
+  height: 0rem;
+  min-height: 12vh;
+  overflow: hidden;
+  /* border: 1px solid purple; */
+  /* margin-bottom: 0.6rem; */
+  transition: height 1s ease-in-out;
+}
+
+.nav .toggle-collapse {
+  position: absolute;
+  top: 0%;
+  width: 90%;
+  cursor: pointer;
+  display: none;
+}
+
+.toggle-icons {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.7rem 0;
+}
+
+.toggle-icons i {
+  font-size: 1.4rem;
+  color: var(--text-gray);
+}
+
+.nav .nav-brand a {
+  font-size: 1.6rem;
+  display: block;
+  padding: 1rem 0;
+  font-size: 1.6rem;
+}
+
+.nav-brand {
+  padding: 1rem 0.3rem;
+}
+
+.nav-menu {
+  justify-content: space-between;
+}
+
+.nav-items {
+  display: flex;
+}
+
+.nav-link {
+  padding: 1.2rem 1rem;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.nav-link:hover {
+  background-color: var(--midnight);
+  border-radius: 12px;
+}
+
+.nav-link a:hover {
+  background-color: var(--midnight);
+  color: white;
+}
+
+.nav-social {
+  padding: 1.4rem 1rem;
+}
+
+.nav-social i {
+  padding: 0.2rem;
+  font-size: 1.2rem;
+}
+
+.nav-social i:hover {
+  color: #a1c4cf;
+}
+
+/* ----------------- Media Queries --------------- */
+
+/* ------ viewport <= 750px ------ */
+@media only screen and (max-width: 750px) {
+  .nav-menu,
+  .nav-items {
+    flex-direction: column;
+  }
+
+  .nav .toggle-collapse {
+    display: initial;
+  }
+}
+
+/* viewport <= 750px */
