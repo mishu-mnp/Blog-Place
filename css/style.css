@@ -292,6 +292,23 @@ h2 {
   color: white;
 }
 
+/* Sidebar */
+.category h2 {
+  text-align: center;
+}
+.list-items {
+  background: var(--sky);
+  padding: 0.4rem 1rem;
+  margin: 0.8rem 0;
+  border-radius: 3rem;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-items a {
+  color: black;
+}
 /* ----------------- Media Queries --------------- */
 
 /* ------ viewport <= 750px ------ */
