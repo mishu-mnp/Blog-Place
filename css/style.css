@@ -377,6 +377,107 @@ h2 {
   margin: 0.4rem 0.6rem;
 }
 
+/* ************** Footer ************* */
+.footer {
+  width: 100%;
+  background: black;
+  /* display: flex;
+  justify-content: space-between; */
+  color: white;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.footer .about {
+  width: 25%;
+  /* border: 1px dashed white; */
+}
+
+.letter {
+  width: 22%;
+  /* border: 1px dashed white; */
+}
+
+.letter .email {
+  display: flex;
+  /* object-fit: contain; */
+  flex: 1;
+}
+
+.letter input {
+  padding: 0.6rem;
+  outline: none;
+  font-size: 1rem;
+  background: black;
+  color: gray;
+}
+
+.letter i {
+  font-size: 1.5rem;
+  background: var(--sky);
+  padding: 0.5rem;
+  cursor: pointer;
+  color: black;
+}
+
+.instagram {
+  width: 30%;
+  /* border: 1px dashed white; */
+}
+
+.instagram .images {
+  margin: 0.8rem;
+}
+.instagram .images img {
+  width: 5rem;
+  height: 4rem;
+  padding: 0.2rem;
+  /* object-fit: contain; */
+}
+
+.follow {
+  width: 15%;
+  /* border: 1px dashed white; */
+}
+
+.social-icons i {
+  font-size: 1.5rem;
+  padding: 0.4rem;
+  color: white;
+}
+
+.scroll-top {
+  position: relative;
+  margin-top: 10%;
+}
+.scroll-top span {
+  font-size: 2rem;
+  color: skyblue;
+}
+
+.scroll-top span:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.copyright {
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.copyright p strong {
+  color: white;
+}
+
+.heart {
+  color: red;
+  border: none;
+}
 /* ----------------- Media Queries --------------- */
 
 /* ------ viewport <= 750px ------ */
