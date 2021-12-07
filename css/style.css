@@ -220,13 +220,13 @@ h2 {
 }
 
 .site-content {
+  margin: 1.5rem;
   display: grid;
   grid-template-columns: 70% 30%;
 }
 
 .post-content {
   width: 100%;
-  /* margin-bottom: 5rem; */
 }
 
 .post-info span {
@@ -263,6 +263,8 @@ h2 {
 
 .post-title a {
   font-size: 1.8rem;
+  font-weight: 800;
+  color: black;
 }
 
 .post-btn {
@@ -276,7 +278,7 @@ h2 {
   justify-content: center;
   color: var(--text-gray);
   margin: 4rem 0;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .pagination a {
@@ -296,6 +298,7 @@ h2 {
 .category h2 {
   text-align: center;
 }
+
 .list-items {
   background: var(--sky);
   padding: 0.4rem 1rem;
@@ -309,6 +312,71 @@ h2 {
 .list-items a {
   color: black;
 }
+
+.popular-post .post-content {
+  padding: 2rem;
+  margin: 1rem;
+}
+
+.popular-post h2 {
+  padding-top: 8rem;
+  text-align: center;
+}
+
+.popular-post .post-title a {
+  font-size: 1.2rem;
+}
+
+.popular-post .post-info {
+  padding: 0.4rem 0.1rem !important;
+  bottom: 0rem !important;
+  left: 1rem !important;
+  border-radius: 0rem !important;
+  background: white !important;
+}
+
+.newsletter {
+  padding-top: 3rem;
+}
+
+.form-element {
+  margin-left: 2rem;
+  padding: 0.5rem 2rem;
+}
+
+.newsletter h2 {
+  text-align: center;
+}
+
+.form-element input {
+  width: 80%;
+  padding: 0.8rem;
+  outline: none;
+}
+
+.form-btn {
+  margin-top: 1rem;
+  padding: 1rem 33%;
+  background: var(--sky);
+  border-radius: 0;
+}
+
+.popular-tags {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.tags {
+  margin-left: 3rem;
+}
+
+.tag {
+  background: var(--sky);
+  padding: 0.4rem 1rem;
+  border-radius: 3rem;
+  margin: 0.4rem 0.6rem;
+}
+
 /* ----------------- Media Queries --------------- */
 
 /* ------ viewport <= 750px ------ */
@@ -322,5 +390,3 @@ h2 {
     display: initial;
   }
 }
-
-/* viewport <= 750px */
