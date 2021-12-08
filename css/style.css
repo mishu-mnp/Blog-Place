@@ -64,6 +64,9 @@ p {
   color: var(--text-gray);
 }
 
+.container {
+  margin: 0 5vw;
+}
 /* ------- Navbar -------- */
 .nav {
   background-color: white;
@@ -93,6 +96,10 @@ p {
 .toggle-icons i {
   font-size: 1.4rem;
   color: var(--text-gray);
+}
+
+.collapse {
+  height: 30rem;
 }
 
 .nav .nav-brand a {
@@ -216,15 +223,11 @@ h2 {
 }
 
 /* *********** Blog content *********** */
-.container {
-  margin: 2rem;
-}
-
 .site-content {
   margin: 1.5rem;
   display: grid;
   grid-template-columns: 70% 30%;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
 .post-content {
@@ -479,6 +482,74 @@ h2 {
   color: red;
   border: none;
 }
+
+/* ******************** Slider ************************ */
+.blog {
+  background: url("../assets/Abract01.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 100vh;
+  width: 100%;
+  background-size: 68%;
+}
+
+.blog-post {
+  padding-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blog-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  margin: 3rem 2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.blog-title {
+  padding: 2rem 0;
+}
+
+.btn-blog {
+  padding: 0.7rem 2rem;
+  background: var(--sky);
+  margin: 0.5rem;
+}
+
+.blog-content span {
+  display: block;
+  margin: 0.5rem;
+}
+
+.owl-nav {
+  position: absolute;
+  top: 0%;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.owl-nav .owl-prev .owl-nav-prev,
+.owl-nav .owl-next .owl-nav-next {
+  color: var(--text-gray);
+  background: transparent;
+  font-size: 3rem;
+  margin: 1rem;
+}
+
+.owl-theme .owl-nav[class*="owl-"]:hover {
+  background: transparent;
+  color: var(--midnight);
+}
+
+.owl-theme .owl-nav[class*="owl-"] {
+  outline: none;
+}
+
 /* ----------------- Media Queries --------------- */
 
 /* ------ viewport <= 1130px ------ */
