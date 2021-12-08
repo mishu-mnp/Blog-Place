@@ -3,9 +3,7 @@
 
 
 <!-- Project Video --> 
-<figure style="margin-top: 3rem;" class="video_container">
-    <video controls="true" allowfullscreen="true" width="320" height="240">
-        <source src="../assets/video/proj.mp4" type="video/mp4">
-    </video>
+<figure class="video_container">
+  <iframe src="https://www.youtube.com/embed/HbjaAm4Bib0" frameborder="0" allowfullscreen="true"> </iframe>
 </figure>
 
